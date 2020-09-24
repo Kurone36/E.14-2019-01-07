@@ -1,0 +1,11 @@
+ZAPYTANIE 1
+	SELECT nazwa, opis, cena FROM `podzespoly` WHERE typy_id = 1;
+
+ZAPYTANIE 2
+	SELECT id, nazwa FROM `podzespoly` WHERE dostepnosc = 1 AND cena < 400;
+
+ZAPYTANIE 3
+	SELECT nazwa, kategoria FROM `podzespoly` JOIN `typy` ON podzespoly.typy_id = typy.id WHERE typy_id = 1;
+
+ZAPYTANIE 4
+	ALTER TABLE `typy` ADD opis TEXT;
